@@ -66,7 +66,6 @@ def process_log_file(cur, filepath):
         cur.execute(songplay_table_insert, songplay_data)
         
 
-
 def process_data(cur, conn, filepath, func):
     # get all files matching extension from directory
     all_files = []
@@ -84,6 +83,7 @@ def process_data(cur, conn, filepath, func):
         func(cur, datafile)
         conn.commit()
         print('{}/{} files processed.'.format(i, num_files))
+
 
 
 def main():
