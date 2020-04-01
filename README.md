@@ -48,12 +48,8 @@ Using the song and log datasets to create a star schema optimized for queries on
 
 ## Project Files
 
-**test.ipynb** displays the first few rows of each table to check database.
-
-**create_tables.py** drops and creates your tables. Run this file first to reset database and table before running ETL scripts.
-
-**etl.ipynb** ETL process to reads and processes a single file from `song_data` and `log_data` and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
-
-**etl.py** ETL Pipeline reads and processes files from `song_data` and `log_data` and loop through all subset datal then loads into tables. 
-
-**sql_queries.py** contains all sql queries, and is imported into the last three files above.
+1. **test.ipynb** displays the first few rows of each table to check database.
+2. **create_tables.py** drops and creates your tables. Run this file first to reset database and table before running ETL scripts.
+3. **etl.ipynb** ETL process to reads and processes a single file from `song_data` and `log_data` and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
+4. **etl.py** ETL Pipeline reads and processes files from `song_data` and `log_data` and loop through all subset datal then loads into tables. 
+5. **sql_queries.py** contains all sql queries, and is imported into the last three files above.
