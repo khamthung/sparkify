@@ -1,6 +1,8 @@
 # Sparkify
 This project demonstrate ETL process for song analysis by using song and log dataset, load into new fact and dimension table. The goal at the end will be able to find the songs that was played the whole length. This could lead us to analyze more insight of each song such as how many time of the week, month and year that song have been played.
 
+**To begin process**, run `create_tables.py` and `etl.py` then test the queries results on `test.ipynb`
+
 
 ## The Dataset
 ### Song Dataset 
