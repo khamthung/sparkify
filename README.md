@@ -1,5 +1,6 @@
 # Sparkify
-This Project demonstrate 
+This project demonstrate ETL process for song analysis by using song and log dataset, load into new fact and dimension table. The goal at the end will be able to find the songs that was played the whole length. This could lead us to analyze more insight of each song such as how many time of the week, month and year that song have been played.
+
 
 ## The Dataset
 ### Song Dataset 
@@ -50,6 +51,26 @@ Using the song and log datasets to create a star schema optimized for queries on
 
 1. **test.ipynb** displays the first few rows of each table to check database.
 2. **create_tables.py** drops and creates your tables. Run this file first to reset database and table before running ETL scripts.
-3. **etl.ipynb** ETL process to reads and processes a single file from `song_data` and `log_data` and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
-4. **etl.py** ETL Pipeline reads and processes files from `song_data` and `log_data` and loop through all subset datal then loads into tables. 
+3. **etl.ipynb** This notebook show ETL process to reads single file from `song_data` and `log_data` and loads the data into tables. 
+4. **etl.py** ETL Pipeline to loop through entire subset data from `song_data` and `log_data`, reads and processes files then loads into tables. 
 5. **sql_queries.py** contains all sql queries, and is imported into the last three files above.
+
+## Results
+
+* **Songplays**
+![alt text](images/songplays.png "Schema")
+Since this is a subset of the much larger dataset, the solution dataset will only have 1 row with values for value containing ID for both songid and artistid in the fact table. Those are the only 2 values that the query in the sql_queries.py will return that are not-NONE. The rest of the rows will have NONE values for those two variables.
+![alt text](images/songsplay_find.png "Schema")
+
+* **Songs**
+![alt text](images/songs.png "Schema")
+* **Artists**
+![alt text](images/artists.png "Schema")
+* **Users**
+![alt text](images/users.png "Schema")
+* **Time**
+![alt text](images/time.png "Schema")
+
+
+
+
