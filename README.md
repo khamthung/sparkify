@@ -60,13 +60,14 @@ Using the song and log datasets to create a star schema optimized for queries on
 * **Songplays**
 ![alt text](images/songplays.png "Schema")
 Since this is a subset of the much larger dataset, the solution dataset will only have 1 row with values for value containing ID for both songid and artistid in the fact table. Those are the only 2 values that the query in the sql_queries.py will return that are not-NONE. The rest of the rows will have NONE values for those two variables.
-![alt text](images/songsplay_find.png "Schema")
+![alt text](images/songsplays_find.png "Schema")
 
 * **Songs**
 ![alt text](images/songs.png "Schema")
 * **Artists**
 ![alt text](images/artists.png "Schema")
 * **Users**
+
 ![alt text](images/users.png "Schema")
 * **Time**
 ![alt text](images/time.png "Schema")
