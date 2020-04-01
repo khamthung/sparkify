@@ -68,7 +68,6 @@ Since this is a subset of the much larger dataset, the solution dataset will onl
 * **Artists**
 ![alt text](images/artists.png "Schema")
 * **Users**
-
 ![alt text](images/users.png "Schema")
 * **Time**
 ![alt text](images/time.png "Schema")
